@@ -1,5 +1,5 @@
 {
-  "name": "darrynten/clarifai-php",
+  "name": "dergus/clarifai-php",
   "description": "PHP Client for the Clarifai API",
   "type": "library",
   "require": {
