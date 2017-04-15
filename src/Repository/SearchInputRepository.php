@@ -53,12 +53,12 @@ class SearchInputRepository extends InputRepository
      *
      * @return Input[] array
      */
-    public function search($params)
+    public function search($params, array $options = [])
     {
         $searchResult = $this->getRequest()->request(
             'POST',
             'searches',
-            $this->getSearchQuery($params)
+            $this->getSearchQuery($params) + $options
         );
 
         return $this->getInputsFromSearchResult($searchResult);
